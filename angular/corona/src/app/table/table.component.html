@@ -1,0 +1,42 @@
+<div class="container my-5">
+    <table class="table table-bordered table-info table-hover">
+        <thead>
+            <tr>
+                <th class="text-center">Country</th>
+                <th>Total Cases</th>
+                <th>New Cases</th>
+                <th>Total Deaths</th>
+                <th>New Deaths</th>
+                <th>Recovered</th>
+                <th>Active Cases</th>
+                <th>Critical</th>
+                <th>Total Tests</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center">{{world.country}}</td>
+                <td>{{world.totalCases}}</td>
+                <td>+{{world.newCases}}</td>
+                <td>{{world.totalDeaths}}</td>
+                <td>+{{world.newDeaths}}</td>
+                <td>{{world.recovered}}</td>
+                <td>{{world.activeCases}}</td>
+                <td>{{world.critical}}</td>
+                <td>{{world.totalTests}}</td>
+            </tr>
+            <tr *ngFor="let stats of currentStats">
+                <td class="text-center">{{stats.country}}</td>
+                <td>{{stats.totalCases}}</td>
+                <td>+{{stats.newCases}}</td>
+                <td>{{stats.totalDeaths}}</td>
+                <td>+{{stats.newDeaths}}</td>
+                <td>{{stats.recovered}}</td>
+                <td>{{stats.activeCases}}</td>
+                <td>{{stats.critical}}</td>
+                <td>{{stats.totalTests}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

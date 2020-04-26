@@ -1,0 +1,15 @@
+nav{
+
+    box-shadow: 0px 2px 20px 0px #000;
+    padding:15px;
+    
+   
+}
+
+ nav a.nav-link.dropdown-toggle.text-white:hover {
+
+   
+   background-color:skyblue;
+   border-radius: 10px;
+   color:black;
+}
