@@ -26,10 +26,10 @@ public class StatisticsTable {
 	
 	
 	@Column(name="Total_Deaths")
-	private Integer totaldeaths;
+	private Integer totalDeaths;
 	
 	@Column(name="New_Deaths")
-	private Integer newdeaths;
+	private Integer newDeaths;
 	
 	@Column(name="Recovered")
 	private Integer recovered;
@@ -50,14 +50,14 @@ public class StatisticsTable {
 	public StatisticsTable() {}
 
 
-	public StatisticsTable(String country, Integer totalCases, Integer newCases, Integer totaldeaths, Integer newdeaths,
+	public StatisticsTable(String country, Integer totalCases, Integer newCases, Integer totalDeaths, Integer newDeaths,
 			Integer recovered, Integer activeCases, Integer critical, Integer totalTests, Date dateTime) {
 		super();
 		this.country = country;
 		this.totalCases = totalCases;
 		this.newCases = newCases;
-		this.totaldeaths = totaldeaths;
-		this.newdeaths = newdeaths;
+		this.totalDeaths = totalDeaths;
+		this.newDeaths = newDeaths;
 		this.recovered = recovered;
 		this.activeCases = activeCases;
 		this.critical = critical;
@@ -96,23 +96,29 @@ public class StatisticsTable {
 	}
 
 
-	public Integer getTotaldeaths() {
-		return totaldeaths;
+	
+
+
+	
+
+
+	public Integer getTotalDeaths() {
+		return totalDeaths;
 	}
 
 
-	public void setTotaldeaths(Integer totaldeaths) {
-		this.totaldeaths = totaldeaths;
+	public void setTotalDeaths(Integer totalDeaths) {
+		this.totalDeaths = totalDeaths;
 	}
 
 
-	public Integer getNewdeaths() {
-		return newdeaths;
+	public Integer getNewDeaths() {
+		return newDeaths;
 	}
 
 
-	public void setNewdeaths(Integer newdeaths) {
-		this.newdeaths = newdeaths;
+	public void setNewDeaths(Integer newDeaths) {
+		this.newDeaths = newDeaths;
 	}
 
 

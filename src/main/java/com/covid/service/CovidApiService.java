@@ -32,7 +32,7 @@ import com.covid.repository.StatisticsRepository;
 import javassist.expr.Instanceof;
 
 @Service
-public class CovidService {
+public class CovidApiService {
 
 	@Autowired
 	StatisticsRepository statsRepo;
