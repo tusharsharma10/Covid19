@@ -1,6 +1,8 @@
 package com.covid.entity;
 
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
@@ -9,9 +11,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="History_Stats")
-public class HistoryTable {
+public class HistoryTable implements Serializable{
 
 	
+	
+	private static final long serialVersionUID = 1L;
+
+
 	@EmbeddedId
 	private HistoryId id;
 	

@@ -1,25 +1,25 @@
 package com.covid.bean;
 
-import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Cases {
 
 	@JsonProperty("new")
-	int newCases;
+	String newCases;
 	int active;
 	int critical;
 	
 	int recovered;
+	public String getNewCases() {
+		return newCases;
+	}
+	public void setNewCases(String newCases) {
+		this.newCases = newCases;
+	}
 	int total;
 	
 	
-	public int getNewCases() {
-		return newCases;
-	}
-	public void setNewCases(int newCases) {
-		this.newCases = newCases;
-	}
+	
 	public int getActive() {
 		return active;
 	}

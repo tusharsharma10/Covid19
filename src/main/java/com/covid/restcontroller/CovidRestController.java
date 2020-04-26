@@ -12,13 +12,30 @@ public class CovidRestController {
 
 	@Autowired CovidService covidService;
 	
-	@GetMapping("/get")
+	@GetMapping("/getStats")
 	public String getDataFromApi() {
 		
-		covidService.getDataFromApi();
+		covidService.getStatisticsDataFromApi();
 		
 		return "checking...";
 	}
 	
+	
+	@GetMapping("/getHistory")
+	public String getDataFromApiHistory() {
+		
+		covidService.getDataFromApiHistory();
+		
+		return "checking...";
+	}
+	
+	
+	@GetMapping("/getCountries")
+	public String getCountries() {
+		
+		covidService.getCountriesImpl();
+		
+		return "getting";
+	}
 	
 }
